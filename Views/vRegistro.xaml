@@ -21,16 +21,13 @@
             HorizontalTextAlignment="End"/>
 
         <Grid>
-
             <!--Filas-->
-
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
             <!--Columnas-->
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -38,41 +35,38 @@
             </Grid.ColumnDefinitions>
 
             <Label 
-        
-        Text="Nombre"
-           FontSize="18"
-           HorizontalTextAlignment="Center"
-           Grid.Row="0"
-           Grid.Column="0"/>
+                Text="Nombre"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="0"/>
 
             <Entry x:Name="txtNombre"
-           Placeholder="Ingrese su nombre"
-           Grid.Row="1"
-           Grid.Column="0"/>
+                Placeholder="Ingrese su nombre"
+                Grid.Row="1"
+                Grid.Column="0"/>
 
             <Label 
-        
-        Text="Apellido"
-           FontSize="18"
-           HorizontalTextAlignment="Center"
-           Grid.Row="0"
-           Grid.Column="1"/>
+                Text="Apellido"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="1"/>
 
             <Entry x:Name="txtApellido"
-           Placeholder="Ingrese su apellido"
-           Grid.Row="1"
-           Grid.Column="1"/>
-
+                Placeholder="Ingrese su apellido"
+                Grid.Row="1"
+                Grid.Column="1"/>
 
             <Label 
-        
-        Text="Voltiamperio VA"
-           FontSize="18"
-           HorizontalTextAlignment="Center"
-           Grid.Row="0"
-           Grid.Column="2"/>
+                Text="Voltiamperio VA"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="2"/>
 
-            <Picker x:Name="pkVoltiamperio" Title=""
+            <Picker x:Name="pkVoltiamperio" 
+                    Title="Seleccionar VA"
                     Grid.Row="1"
                     Grid.Column="2">
                 <Picker.Items>
@@ -80,15 +74,11 @@
                     <x:String>750</x:String>
                     <x:String>1000</x:String>
                 </Picker.Items>
-                
             </Picker>
-
         </Grid>
 
         <Grid>
-
             <!--Filas-->
-
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -97,71 +87,72 @@
             </Grid.RowDefinitions>
 
             <!--Columnas-->
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Label 
+                Text="Fecha"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="0"/>
 
-            Text="Fecha"
-               FontSize="18"
-               HorizontalTextAlignment="Center"
-               Grid.Row="0"
-               Grid.Column="0"/>
-
-            <DatePicker x:Name="fecha" Format="dd/MM/YYYY" Grid.Row="0"
-            Grid.Column="1"></DatePicker>
+            <DatePicker x:Name="fecha" 
+                Format="dd/MM/yyyy" 
+                Grid.Row="0"
+                Grid.Column="1"/>
 
             <Label 
+                Text="Ciudad"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="1"
+                Grid.Column="0"/>
 
-            Text="Ciudad"
-               FontSize="18"
-               HorizontalTextAlignment="Center"
-               Grid.Row="1"
-               Grid.Column="0"/>
-
-            <Picker x:Name="pkCiudad" Title=""
-            Grid.Row="1"
-            Grid.Column="1">
+            <Picker x:Name="pkCiudad" 
+                Title="Seleccionar Ciudad"
+                Grid.Row="1"
+                Grid.Column="1">
                 <Picker.Items>
                     <x:String>Quito</x:String>
                     <x:String>Guayaquil</x:String>
                     <x:String>Cuenca</x:String>
                 </Picker.Items>
-
             </Picker>
 
-
             <Label 
-
-            Text="Monto Inicial"
-               FontSize="18"
-               HorizontalTextAlignment="Center"
-               Grid.Row="2"
-               Grid.Column="0"/>
+                Text="Monto Inicial"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Grid.Row="2"
+                Grid.Column="0"/>
 
             <Entry x:Name="txtMontoInicial"
-           Placeholder="Ingrese el monto inicial"
-           Grid.Row="2"
-           Grid.Column="1"/>
+                Placeholder="Ingrese el monto inicial"
+                Grid.Row="2"
+                Grid.Column="1"/>
 
             <Button 
-            Style="{StaticResource estiloButton }"
-             x:Name="btnPagoMensual"
-             Text="CALCULAR PAGO MENSUAL"
-             Clicked="btnPagoMensual_Clicked"
-             Grid.Row="3"
-             
-             />
+                Style="{StaticResource estiloButton}"
+                x:Name="btnPagoMensual"
+                Text="Calcular Pago Mensual"
+                Clicked="btnPagoMensual_Clicked"
+                Grid.Row="3"
+                Grid.Column="0"/>
 
+            <Entry x:Name="txtCuotaMensual"
+                Placeholder="Cuota mensual"
+                IsReadOnly="True"
+                Grid.Row="3"
+                Grid.Column="1"/>
         </Grid>
 
         <Button 
-          x:Name="btnResumen"
-          Text="RESUMEN"
-          Clicked="btnResumen_Clicked"/>
+            x:Name="btnResumen"
+            Text="Ver Resumen"
+            Clicked="btnResumen_Clicked"/>
 
     </VerticalStackLayout>
 </ContentPage>
