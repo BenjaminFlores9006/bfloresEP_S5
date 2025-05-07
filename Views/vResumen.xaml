@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bfloresEP_S5.Views.vResumen"
+             Title="vResumen">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="25"
+        >
+        <Label 
+            Text="RESUMEN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="lblUsuario"
+            FontSize="16" 
+            TextColor="Red"
+            HorizontalTextAlignment="End"/>
+
+        <Grid>
+
+            <!--Filas-->
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Columnas-->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+
+           Text="- Nombre: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="0"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblNombre"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="0"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Apellido: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="1"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblApellido"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="1"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Voltiamperio: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="2"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblVA"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="2"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Fecha: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="3"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblFecha"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="3"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Ciudad: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="4"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblCiudad"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="4"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Monto Inicial: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="5"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblMontoInicial"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="5"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Cuota mensual: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="6"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblCuotaMensual"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="6"
+           Grid.Column="1"/>
+
+            <Label 
+
+           Text="- Pago Total: "
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="7"
+           Grid.Column="0"/>
+
+            <Label 
+
+           x:Name="lblPagoTotal"
+           FontSize="15"
+           HorizontalTextAlignment="Center"
+           Grid.Row="7"
+           Grid.Column="1"/>
+
+            <Button 
+             x:Name="btnCerrarSesion"
+             Text="Cerrar Sesion"
+             BackgroundColor="Red"
+             TextColor="White"
+             FontAttributes="Bold"
+             Clicked="btnCerrarSesion_Clicked"
+             Grid.Row="8"/>
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

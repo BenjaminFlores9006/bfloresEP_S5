@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bfloresEP_S5.Views.vLogin"
+             Title="vLogin">
+    <VerticalStackLayout
+        Padding="25"
+        Spacing="20"
+        >
+        <Label 
+            Text="LOGIN"
+            TextColor="Red"
+            FontSize="20"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="sbs.png"
+               WidthRequest="250"></Image>
+
+        <Grid>
+
+            <!--Filas-->
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Columnas-->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+         Text="USUARIO"
+            FontSize="18"
+            HorizontalTextAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+            Placeholder="Ingrese el usuario"
+            Grid.Row="0"
+            Grid.Column="1"/>
+
+            <Label 
+         Text="CONTRASEÑA"
+            FontSize="18"
+            HorizontalTextAlignment="Center"
+            Grid.Row="1"
+            Grid.Column="0"/>
+
+            <Entry x:Name="txtContrasena"
+            IsPassword="True"
+            Placeholder="Ingrese la contraseña"
+            Grid.Row="1"
+            Grid.Column="1"/>
+
+        </Grid>
+
+        <Button 
+            Style="{StaticResource estiloButton }"
+            x:Name="btnIniciarSesion"
+                    Text="INICIAR SESIÓN"
+                    Clicked="btnLogin_Clicked"/>
+
+        <Button 
+            Style="{StaticResource estiloButton }"
+            x:Name="btnAcercaDe"
+                    Text="ACERCA DE"
+                    Clicked="btnAcerca_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
